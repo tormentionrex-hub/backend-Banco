@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Credenciales y configuración sensible
+config/config.js
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.suo
+*.swp
+
+# Claude Code
+.claude/
