@@ -60,6 +60,11 @@ module.exports = (sequelize) => {
         allowNull: false,
         defaultValue: 'activo',
       },
+      rol: {
+        type: DataTypes.ENUM('cliente', 'administrador'),
+        allowNull: false,
+        defaultValue: 'cliente',
+      },
     },
     {
       sequelize,
