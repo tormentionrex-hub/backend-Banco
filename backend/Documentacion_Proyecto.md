@@ -6,20 +6,20 @@ Este sistema es el motor central (Backend) de una plataforma financiera moderna.
 ## 2. Guía de Instalación y Configuración
 Si acabas de descargar el proyecto desde el repositorio (Git), sigue estos pasos para ponerlo en marcha, ya que las carpetas de dependencias y configuraciones sensibles no se suben a la nube:
 
-1.  **Instalar librerías:** Abre una terminal en la carpeta del proyecto y ejecuta:
+1.  **Instalar librerías:** Abre una terminal en la carpeta `backend` y ejecuta:
     ```bash
     npm install
     ```
 2.  **Configurar Base de Datos:** Asegúrate de tener MySQL corriendo y que los datos en `config/config.js` coincidan con tu servidor local.
-3.  **Preparar la estructura:** Ejecuta las migraciones para crear las tablas automáticamente:
+3.  **Preparar la estructura:** Ejecuta las migraciones desde la carpeta `backend`:
     ```bash
     npx sequelize-cli db:migrate
     ```
-4.  **Cargar datos de prueba:** Para que no empieces de cero, ejecuta este script que crea un Administrador y clientes de prueba:
+4.  **Cargar datos de prueba:** Desde la carpeta `backend`, ejecuta:
     ```bash
     node seed.js
     ```
-5.  **Iniciar el servidor:**
+5.  **Iniciar el servidor:** Desde la carpeta `backend`:
     ```bash
     npm start
     ```
