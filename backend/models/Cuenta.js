@@ -37,6 +37,9 @@ module.exports = (sequelize) => {
       tipo_cuenta: {
         type: DataTypes.ENUM('ahorro', 'corriente'),
         allowNull: false,
+        validate: {
+          isIn: [['ahorro', 'corriente']]
+        }
       },
       saldo: {
         type: DataTypes.DECIMAL(15, 2),

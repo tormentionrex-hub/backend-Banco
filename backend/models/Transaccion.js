@@ -20,6 +20,9 @@ module.exports = (sequelize) => {
       tipo: {
         type: DataTypes.ENUM('deposito', 'retiro', 'transferencia'),
         allowNull: false,
+        validate: {
+          isIn: [['deposito', 'retiro', 'transferencia']]
+        }
       },
       monto_total: {
         type: DataTypes.DECIMAL(15, 2),

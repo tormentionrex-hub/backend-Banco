@@ -21,6 +21,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
+db.Rol          = require('./Rol')(sequelize);
 db.Usuario      = require('./Usuario')(sequelize);
 db.Cuenta       = require('./Cuenta')(sequelize);
 db.Tarjeta      = require('./Tarjeta')(sequelize);

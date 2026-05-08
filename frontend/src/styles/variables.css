@@ -1,0 +1,34 @@
+:root {
+  /* BCR Colors */
+  --color-primary: #00338D;    /* Azul BCR Profundo */
+  --color-secondary: #00A9E0;  /* Azul Claro BCR */
+  --color-accent: #E4002B;     /* Rojo BCR (Acentos) */
+  
+  /* Nature Colors (Costa Rica) */
+  --color-nature-green: #2D5A27;
+  --color-nature-soft: #E8F5E9;
+  
+  /* UI Colors */
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #F0F4F8;
+  --color-bg-dark: #001A41;    /* Azul muy oscuro para footer */
+  --color-text-primary: #002147;
+  --color-text-secondary: #4B5563;
+  --color-border: #D1D5DB;
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-h1: clamp(32px, 5vw, 56px);
+  --font-h2: clamp(24px, 3.5vw, 40px);
+  
+  /* Layout */
+  --container-max: 100%;
+  --container-padding: 40px;
+  --radius-btn: 4px; /* Botones BCR son más rectangulares con poco radio */
+  --radius-card: 8px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+}

@@ -24,6 +24,9 @@ module.exports = (sequelize) => {
       tipo_movimiento: {
         type: DataTypes.ENUM('debito', 'credito'),
         allowNull: false,
+        validate: {
+          isIn: [['debito', 'credito']]
+        }
       },
       monto: {
         type: DataTypes.DECIMAL(15, 2),

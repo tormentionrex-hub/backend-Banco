@@ -1,0 +1,56 @@
+.download-section {
+  background-color: var(--color-primary);
+  padding: 64px 0;
+  color: var(--color-primary-dark);
+}
+
+.download-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-content h2 {
+  font-size: var(--font-h2);
+  margin-bottom: 16px;
+}
+
+.download-badges {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.badge-btn {
+  background-color: var(--color-bg-dark);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.qr-side {
+  text-align: center;
+}
+
+.qr-box {
+  width: 120px;
+  height: 120px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 4px solid #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .download-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 48px;
+  }
+}

@@ -1,0 +1,114 @@
+.calculator-card {
+  background: var(--color-bg);
+  padding: 28px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-md);
+  max-width: 480px;
+  width: 100%;
+  border-top: 4px solid var(--color-primary);
+}
+
+.calc-input-group {
+  margin-bottom: 12px;
+}
+
+.calc-input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.input-row {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.input-row:focus-within {
+  border-color: var(--color-secondary);
+}
+
+.input-row input {
+  flex: 1;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.input-row select {
+  padding: 0 16px;
+  background-color: var(--color-bg-soft);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.calc-divider {
+  display: flex;
+  justify-content: center;
+  margin: -10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.swap-btn {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.swap-btn:hover {
+  transform: rotate(180deg);
+  border-color: var(--color-secondary);
+}
+
+.calc-breakdown {
+  margin: 24px 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.arrival-badge {
+  display: inline-block;
+  background-color: var(--color-nature-soft);
+  color: var(--color-nature-green);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.calc-note {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: 16px;
+}

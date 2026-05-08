@@ -1,0 +1,228 @@
+.auth-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 111.12vw;
+  height: 111.12vh;
+  display: flex;
+  flex-direction: column; /* Para acomodar el header arriba */
+  align-items: center;
+  justify-content: center;
+  background: url('../../images/premium_photo-1749856569586-518c799e45c6.avif') center/cover no-repeat;
+  image-rendering: -webkit-optimize-contrast; /* Mejora la nitidez en navegadores basados en Chrome */
+  filter: brightness(0.9) contrast(1.1); /* Realza los detalles y oscurece un poco para que el card resalte */
+  z-index: 99999;
+  overflow: hidden;
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+/* AUTH HEADER */
+.auth-nav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.auth-nav-logo {
+  height: 60px;
+}
+
+.auth-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.auth-nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.auth-nav-links a:hover {
+  opacity: 0.7;
+}
+
+.btn-nav-login {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.btn-nav-login:hover {
+  opacity: 0.7;
+}
+
+/* AUTH CARD */
+.auth-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 420px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.08); /* Más traslúcido y neutro */
+  backdrop-filter: blur(30px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px; /* Bordes más orgánicos */
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.auth-card h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* FORM GROUPS WITH MINIMALIST LINES */
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF; /* Blanco puro */
+  margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para resaltar sobre el fondo */
+}
+
+.form-group input {
+  width: 100%;
+  background: transparent !important; /* Forzar transparencia */
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Línea inferior sutil */
+  padding: 10px 0;
+  color: #FFFFFF !important;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-bottom-color: #FFFFFF; /* Brilla al enfocar */
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+/* CHECKBOX & FORGOT */
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgot-password {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-auth {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-auth:hover {
+  transform: scale(1.02);
+}
+
+.auth-footer {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.auth-error {
+  background: rgba(211, 47, 47, 0.1);
+  border: 1px solid rgba(211, 47, 47, 0.4);
+  border-radius: 8px;
+  color: #d32f2f;
+  font-size: 14px;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    margin: 20px;
+    padding: 30px;
+  }
+  
+  .auth-logo {
+    top: 20px;
+    left: 20px;
+    height: 40px;
+  }
+}

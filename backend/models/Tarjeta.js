@@ -25,6 +25,9 @@ module.exports = (sequelize) => {
       tipo: {
         type: DataTypes.ENUM('debito', 'credito'),
         allowNull: false,
+        validate: {
+          isIn: [['debito', 'credito']]
+        }
       },
       fecha_expiracion: {
         type: DataTypes.DATEONLY,

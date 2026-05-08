@@ -1,0 +1,138 @@
+.navbar-bcr {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* NIVEL SUPERIOR */
+.navbar-top-level {
+  background: linear-gradient(180deg, #DCE9FF 0%, #FFFFFF 100%);
+  padding: 8px 0;
+  border-bottom: 1px solid #E0E7FF;
+  width: 100%;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.top-left-group {
+  display: flex;
+  align-items: center;
+}
+
+.bcr-main-logo {
+  height: 80px; /* Tamaño optimizado */
+  width: auto;
+  margin-right: 15px;
+}
+
+.vertical-divider {
+  font-size: 38px;
+  color: #00338D;
+  font-weight: 200;
+  margin: 0 25px 0 10px;
+}
+
+.segments-links {
+  display: flex;
+  gap: 35px;
+}
+
+.segments-links span {
+  font-size: 19px;
+  font-weight: 700;
+  color: #00338D;
+  cursor: pointer;
+  position: relative;
+  padding: 2px 0;
+}
+
+.segments-links span.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #E4002B; /* Rojo BCR exacto */
+}
+
+/* BOTONES DERECHA */
+.top-right-group {
+  display: flex;
+  gap: 12px;
+}
+
+.top-right-group button,
+.top-right-group a {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-bcr {
+  background: transparent;
+  border: 1px solid #4A90E2 !important;
+  color: #00338D;
+}
+
+.btn-navy-bcr {
+  background: #002877;
+  color: #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.btn-light-blue-bcr {
+  background: #0072CE;
+  color: #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* NIVEL INFERIOR */
+.navbar-bottom-level {
+  background: #FFFFFF;
+  padding: 15px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.bottom-container {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.product-links {
+  display: flex;
+  justify-content: space-between; /* Distribución igualitaria */
+  width: 100%;
+}
+
+.product-links a {
+  text-decoration: none;
+  color: #0046B1;
+  font-size: 17px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.product-links a:hover {
+  color: #00A9E0;
+}
+
+.promo-tag {
+  background: #E6F0FF;
+  padding: 3px 15px;
+  border-radius: 15px;
+}
